@@ -51,7 +51,7 @@ public class Proysena {
                     do{
                         System.out.println(rs.getInt("id")+" : "+ rs.getString("nomusu"));
                     } while (rs.next());
-          
+         
                     
                     } catch (SQLException ex) {
                       Logger.getLogger(Proysena.class.getName()).log(Level.SEVERE, null, ex);
