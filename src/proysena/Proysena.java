@@ -45,20 +45,30 @@ public class Proysena {
                     } while (rs.next());*/
                     
                      //sentencia INSERT - para INSERTAR datos
-                    st.executeUpdate("INSERT INTO usuarios VALUES(4, 'Juan', '3334')");
+                   /* st.executeUpdate("INSERT INTO usuarios VALUES(4, 'Juan', '3334')");
+                    rs=st.executeQuery("SELECT * FROM usuarios");
+                    rs.next();
+                    do{
+                        System.out.println(rs.getInt("id")+" : "+ rs.getString("nomusu"));
+                    } while (rs.next()); */
+         
+                   
+
+                     
+                    // Update - Actualizar datos
+                    
+                    st.executeUpdate("UPDATE usuarios SET nomusu='Clara' WHERE id=3");
                     rs=st.executeQuery("SELECT * FROM usuarios");
                     rs.next();
                     do{
                         System.out.println(rs.getInt("id")+" : "+ rs.getString("nomusu"));
                     } while (rs.next());
-         
                     
-                    } catch (SQLException ex) {
+                    
+         
+                                } catch (SQLException ex) {
                       Logger.getLogger(Proysena.class.getName()).log(Level.SEVERE, null, ex);
                     }
-                     
-
-            
         
     }
     
