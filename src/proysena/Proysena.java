@@ -57,14 +57,24 @@ public class Proysena {
                      
                     // Update - Actualizar datos
                     
-                    st.executeUpdate("UPDATE usuarios SET nomusu='Clara' WHERE id=3");
+                  /*  st.executeUpdate("UPDATE usuarios SET nomusu='Clara' WHERE id=3");
                     rs=st.executeQuery("SELECT * FROM usuarios");
                     rs.next();
                     do{
                         System.out.println(rs.getInt("id")+" : "+ rs.getString("nomusu"));
                     } while (rs.next());
+
+                   */
+
+
+                    //DELETE: Borra el dato seleccionado.
                     
-                    
+                     st.executeUpdate("DELETE FROM USUARIOS WHERE id=5");
+                    rs=st.executeQuery("SELECT * FROM usuarios");
+                    rs.next();
+                    do{
+                        System.out.println(rs.getInt("id")+" : "+ rs.getString("nomusu"));
+                    } while (rs.next());
          
                                 } catch (SQLException ex) {
                       Logger.getLogger(Proysena.class.getName()).log(Level.SEVERE, null, ex);
