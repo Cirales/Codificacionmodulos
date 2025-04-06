@@ -45,12 +45,12 @@ public class Proysena {
                     } while (rs.next());*/
                     
                      //sentencia INSERT - para INSERTAR datos
-                   /* st.executeUpdate("INSERT INTO usuarios VALUES(4, 'Juan', '3334')");
+                    st.executeUpdate("INSERT INTO usuarios VALUES(4, 'Juan', '3334', 'Juan8@hotmail.com', '3124567890', '25678345')");
                     rs=st.executeQuery("SELECT * FROM usuarios");
                     rs.next();
                     do{
                         System.out.println(rs.getInt("id")+" : "+ rs.getString("nomusu"));
-                    } while (rs.next()); */
+                    } while (rs.next()); 
          
                    
 
@@ -69,12 +69,12 @@ public class Proysena {
 
                     //DELETE: Borra el dato seleccionado.
                     
-                     st.executeUpdate("DELETE FROM USUARIOS WHERE id=4");
+                     /*st.executeUpdate("DELETE FROM USUARIOS WHERE id=4");
                     rs=st.executeQuery("SELECT * FROM usuarios");
                     rs.next();
                     do{
                         System.out.println(rs.getInt("id")+" : "+ rs.getString("nomusu"));
-                    } while (rs.next());
+                    } while (rs.next());*/
          
                                 } catch (SQLException ex) {
                       Logger.getLogger(Proysena.class.getName()).log(Level.SEVERE, null, ex);
