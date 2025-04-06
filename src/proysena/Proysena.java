@@ -69,7 +69,7 @@ public class Proysena {
 
                     //DELETE: Borra el dato seleccionado.
                     
-                     st.executeUpdate("DELETE FROM USUARIOS WHERE id=5");
+                     st.executeUpdate("DELETE FROM USUARIOS WHERE id=4");
                     rs=st.executeQuery("SELECT * FROM usuarios");
                     rs.next();
                     do{
